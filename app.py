@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.debug = False
 
 
-@app.route('/')
+@app.route('/git/pull/')
 def hello_world():  # put application's code here
     execute("cd ~/public/ ")
     execute("git pull ")
