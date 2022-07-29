@@ -8,6 +8,7 @@ app = Flask(__name__)
 def hello_world():  # put application's code here
     execute("cd ~/public/ ")
     execute("git pull ")
+    return "All files are up to date"
 
 
 if __name__ == '__main__':
