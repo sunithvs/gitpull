@@ -2,6 +2,7 @@ from flask import Flask
 from os import system as execute
 
 app = Flask(__name__)
+app.debug = False
 
 
 @app.route('/')
