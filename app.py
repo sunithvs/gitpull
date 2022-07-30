@@ -7,8 +7,7 @@ app.debug = False
 
 @app.route('/git/pull/')
 def hello_world():  # put application's code here
-    execute("cd ~/public/ ")
-    execute("git pull ")
+    execute("bash ~/.scripts/pull.sh")
     return jsonify(detail='success')
 
 
