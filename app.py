@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.debug = False
 
 
-@app.route('/git/pull/')
+@app.route('/git/pull/', methods=['POST', ])
 def hello_world():  # put application's code here
     execute("bash ~/.scripts/pull.sh")
     return jsonify(detail='success')
